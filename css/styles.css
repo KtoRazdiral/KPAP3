@@ -4,12 +4,6 @@
     font-style: normal; 
     font-weight: normal; 
   } 
-  @font-face { 
-    font-family: "BlackRegular"; 
-    src: url("/FONTS/proximanova_black.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-  } 
 
   .buy {
     font-family: "RobotoCondensed", sans-serif;

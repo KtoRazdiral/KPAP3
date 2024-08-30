@@ -16,16 +16,24 @@
             <div class="logo">
                 <img src="/img/logo_header_0.jpg">
             </div>
-            <div class="navbar">
-                <ul class="nav-list">
-                    <li><a class="active" href="#">Главная</a></li>
-                    <li><a href="#">Расписание</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Техосмотр</a></li>
-                    <li><a href="#">Таксографы</a></li>
-                    <li><a href="#">Автовокзал РЖД</a></li>
-                    <li><a href="#">Автошкола</a></li>
-                </ul>
+            <div class="cap">
+                <div class="min-logo">
+                    <img src="/img/logo_0.png">
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+                <div class="navbar">
+                    <ul class="nav-list">
+                        <li><a class="active" href="#">Главная</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Техосмотр</a></li>
+                        <li><a href="#">Таксографы</a></li>
+                        <li><a href="#">Автовокзал РЖД</a></li>
+                        <li><a href="#">Автошкола</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -65,7 +73,9 @@
                     <a href="http://biletnaavto.ru">biletnaavto.ru</a>
                     <a href="http://busfor.ru">busfor.ru</a>
                     <a href="http://tutu.ru">tutu.ru</a>
-                    <a href="http://avtovokzaly.ru">avtovokzaly.ru</a>
+                    <a href="http://avtovokzaly.ru" class="link">avtovokzaly.ru</a>
+                    
+                    
                 </div>
                 <div class="page-two">
                     <h3>Руководитель предприятия:</h3>
@@ -121,5 +131,11 @@
             </div>
         </div>
     </div>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() { 
+            this.classList.toggle('active'); 
+            document.querySelector(".navbar").classList.toggle('open');
+        })
+    </script> 
 </body>
 
